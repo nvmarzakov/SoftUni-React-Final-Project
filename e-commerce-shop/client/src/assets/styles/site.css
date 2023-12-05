@@ -1,3 +1,6 @@
+@import url('../../components/Navigation.css');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7,3 +10,4 @@
 html {
     font: 12px/1.5 Verdana, sans-serif;
 }
+
