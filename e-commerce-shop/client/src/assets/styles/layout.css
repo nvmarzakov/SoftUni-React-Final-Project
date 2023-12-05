@@ -5,39 +5,46 @@ img {
 }
 
 body {
+    display: block;
     background-color: black;
     background-image: url('../images/karsten-winegeart-0Wra5YYVQJE-unsplash.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    
+
 }
 
-.section-site-header {
+.body-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid orange;
+}
+
+.body-container .site-header {
     background: #212429;
     opacity: 0.8;
 }
 
-.section-site-header .container {
+.body-container .site-header .container {
     display: flex;
     justify-content: space-between;
-    padding: 3em;
+    padding: 1.5em;
 }
 
-.section-site-header .site-title {
+.body-container .site-header .container .site-title {
     color: #fff;
     padding: 0.5em;
     font-size: 1.5em;
 }
 
-.section-site-header a {
+.site-header a {
     color: #fff;
     text-decoration: none;
 }
 
-.section-site-header a:hover {
+.site-header a:hover {
     color: red;
-
 }
-

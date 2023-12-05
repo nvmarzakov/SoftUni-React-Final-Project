@@ -1,0 +1,56 @@
+.site-hero {
+    
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.site-hero a {
+    color: #fff;
+}
+
+.site-hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25em;
+}
+
+.site-hero .container .title {
+    color: deepskyblue;
+    font-size: 2.5em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    background: #000;
+    opacity: 0.7;
+    border-radius: 10px;
+    margin-top: 1em;
+    padding: 0.3em;
+}
+
+.site-hero .description {
+    text-align: center;
+    color: red;
+    background: black;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.site-hero .container a {
+    margin-top: 2em;
+    display: block;
+    text-decoration: none;
+    background: #000;
+    border-radius: 10px;
+    padding: 0.4em;
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+    
+}
+
+.site-hero .container a:hover { 
+    color: deepskyblue;
+    background: #F7E4DA;
+    
+}

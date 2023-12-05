@@ -2,7 +2,7 @@ import styles from './Footer.css?inline'
 
 export default function Footer() {
     return (
-        <div className="section-site-footer">
+        <div className="site-footer">
             <div className="section-top-bar">
                 <div className="container">
                     <p className="phone"><i className="fa-solid fa-mobile-screen"></i>+359-52-123-123</p>

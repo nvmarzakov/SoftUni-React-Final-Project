@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Navigation() {
     return (
         <>
-            <p class="site-title">
+            <p className="site-title">
                 <Link to='/'>Recharge</Link>
             </p>
             <nav className="main-nav">
