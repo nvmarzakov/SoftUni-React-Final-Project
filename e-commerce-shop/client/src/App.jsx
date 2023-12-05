@@ -8,12 +8,14 @@ import Register from './components/Register'
 import Account from './components/Account'
 import Logout from './components/Logout'
 import Community from './components/Community'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
 
     return (
         <>
-            <Navigation/>
+            <Header/>
 
             <Routes>
                 <Route path='/' element={<Home/>}/>
@@ -25,6 +27,8 @@ function App() {
                 <Route path='/logout' element={<Logout/>} />
                 <Route path='/community' element={<Community/>} />
             </Routes>
+
+            <Footer/>
         </>
     )
 }
