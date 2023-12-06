@@ -1,5 +1,3 @@
-import styles from './Footer.css?inline'
-
 export default function Footer() {
     return (
         <div className="site-footer">

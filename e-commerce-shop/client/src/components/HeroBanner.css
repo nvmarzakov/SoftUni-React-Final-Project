@@ -12,45 +12,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15em;
+    margin-bottom: 21em;
 }
 
 .site-hero .container .title {
-    color: deepskyblue;
+    color: yellow;
     font-size: 2.5em;
     font-weight: normal;
     letter-spacing: 0.1em;
-    background: #000;
-    opacity: 0.7;
+    font-size: 3em;
     border-radius: 10px;
-    margin-top: 1em;
     padding: 0.3em;
+
 }
+
+.site-hero .container .title {
+    text-shadow: 2px 2px 5px blue;
+  }
 
 .site-hero .description {
     text-align: center;
-    color: red;
-    background: black;
-    margin: 0.5em;
+    font-size: 2.5em;
+    color: deepskyblue;
+    
     padding: 0.5em;
-    border-radius: 10px;
-    opacity: 0.8;
 }
-
+.site-hero .description {
+    text-shadow: 2px 2px 5px black;
+}
 .site-hero .container a {
-    margin-top: 2em;
+    margin-top: 3em;
     display: block;
     text-decoration: none;
-    background: #000;
+    color: red;
+    background: white;
     border-radius: 10px;
-    padding: 0.4em;
+    padding: 0.3em;
     transition: opacity 0.3s ease;
     opacity: 0.8;
     
 }
 
 .site-hero .container a:hover { 
-    color: deepskyblue;
-    background: #F7E4DA;
+    color: yellow;
+    background: deepskyblue;
     
 }

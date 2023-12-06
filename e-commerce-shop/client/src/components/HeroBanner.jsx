@@ -5,7 +5,7 @@ export default function HeroBanner() {
         <div className="site-hero">
             <div className="container">
                 <section className="section hero-title">
-                    <h2 className="title">Welcome to Our Training Community </h2>
+                    <h2 className="animate__animated animate__heartBeat title">Welcome to Our Training Community </h2>
                     <p className="description">Your one-stop destination for all your needs</p>
                 </section>
 
