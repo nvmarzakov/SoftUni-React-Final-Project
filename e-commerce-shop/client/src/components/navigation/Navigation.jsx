@@ -1,4 +1,3 @@
-import styles from './Navigation.css?inline'
 import { Link } from 'react-router-dom'
 
 export default function Navigation() {

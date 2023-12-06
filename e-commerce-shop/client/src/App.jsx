@@ -1,13 +1,16 @@
 import { Routes, Route} from 'react-router-dom'
 
-import Login from './components/Login/Login'
+import Login from './components/login/Login'
 import Account from './components/Account'
-import Logout from './components/Logout/Logout'
 import Community from './components/Community'
 import Header from './components/Header'
-import Home from './components/Home/Home'
+import Home from './components/home/Home'
+import Footer from './components/footer/Footer'
+import Logout from './components/Logout/Logout'
 import Register from './components/Register/Register'
-import Footer from './components/Footer/Footer'
+
+
+
 function App() {
 
     return (
