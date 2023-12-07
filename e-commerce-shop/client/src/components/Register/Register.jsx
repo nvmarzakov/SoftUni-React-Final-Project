@@ -2,7 +2,7 @@ export default function Register() {
     return (
         <div className="animate__animated animate__fadeIn container register-container">
             <form>
-                <h1 className="register-title">Please enter your details:</h1>
+                <h3 className="register-title">Please enter your details:</h3>
                 <div className="row">
                     <div className="col-description">
                         <label htmlFor="fname">Email:</label>

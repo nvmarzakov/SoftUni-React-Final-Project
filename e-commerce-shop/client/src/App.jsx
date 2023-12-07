@@ -10,7 +10,6 @@ import Logout from './components/Logout/Logout'
 import Register from './components/Register/Register'
 
 
-
 function App() {
 
     return (

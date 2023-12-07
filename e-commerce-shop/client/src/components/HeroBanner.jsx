@@ -12,7 +12,6 @@ export default function HeroBanner() {
                 <section className="section button">
                     <p className="cta"><Link to="/register" className="button">Make an account</Link></p>
                 </section>
-               
             </div>
         </div>
     )
