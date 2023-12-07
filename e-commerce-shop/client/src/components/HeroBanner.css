@@ -1,7 +1,7 @@
 .site-hero {
     
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .site-hero a {
@@ -12,15 +12,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 21em;
+    margin-bottom: 10em;
 }
 
 .site-hero .container .title {
     color: yellow;
-    font-size: 2.5em;
+    font-size: 1.8em;
     font-weight: normal;
     letter-spacing: 0.1em;
-    font-size: 3em;
     border-radius: 10px;
     padding: 0.3em;
 
@@ -32,29 +31,29 @@
 
 .site-hero .description {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.3em;
     color: deepskyblue;
-    
     padding: 0.5em;
 }
 .site-hero .description {
     text-shadow: 2px 2px 5px black;
 }
 .site-hero .container a {
-    margin-top: 3em;
+    margin-top: 2.5em;
     display: block;
     text-decoration: none;
-    color: red;
-    background: white;
+    color: yellow;
+    background: rgb(117, 107, 107);
     border-radius: 10px;
     padding: 0.3em;
     transition: opacity 0.3s ease;
     opacity: 0.8;
-    
+    font-size: 0.8em;
+    border: 1px solid yellow;
 }
 
 .site-hero .container a:hover { 
     color: yellow;
-    background: deepskyblue;
-    
+    background: rgb(185, 171, 171);
+    border: 1px solid yellow
 }

@@ -3,7 +3,7 @@ export default function Login() {
         <>
              <div className="animate__animated animate__fadeIn container register-container">
             <form>
-                <h1 className="register-title">Login to your account:</h1>
+                <h3 className="register-title">Login to your account:</h3>
                 <div className="row">
                     <div className="col-description">
                         <label htmlFor="fname">Email:</label>
