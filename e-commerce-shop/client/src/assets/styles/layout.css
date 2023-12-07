@@ -43,6 +43,7 @@ body {
 .site-header a {
     color: #fff;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .site-header a:hover {
