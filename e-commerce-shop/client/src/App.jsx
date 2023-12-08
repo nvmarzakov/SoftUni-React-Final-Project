@@ -8,6 +8,7 @@ import Home from './components/home/Home'
 import Footer from './components/footer/Footer'
 import Logout from './components/Logout/Logout'
 import Register from './components/Register/Register'
+import Notfound from './components/404/NotFound'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/account' element={<Account/>} />
                 <Route path='/logout' element={<Logout/>} />
                 <Route path='/community' element={<Community/>} />
+                <Route path='*' element={<Notfound/>} />
             </Routes>
 
             <Footer />
