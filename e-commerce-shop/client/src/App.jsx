@@ -10,6 +10,7 @@ import Logout from './components/logout/Logout'
 import Register from './components/register/Register'
 import Notfound from './components/404/NotFound'
 import ExerciseCreate from './components/exercise-create/ExerciseCreate'
+import ExerciseList from './components/exercise-list/ExerciseList'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             
             <Routes>
                 <Route path='/' element={<Home/>}/>
+                <Route path='/exercises' element={<ExerciseList/>}/>
                 <Route path= '/create-exercise' element={<ExerciseCreate/>} />
                 <Route path='/login' element={<Login/>} />
                 <Route path='/register' element={<Register/>} />
