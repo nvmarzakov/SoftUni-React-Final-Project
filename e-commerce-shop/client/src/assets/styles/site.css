@@ -6,11 +6,13 @@
 
 @import url('../../components/navigation/navigation.css');
 
-@import url('../../components/HeroBanner.css');
+@import url('../../components/herobanner/HeroBanner.css');
 
-@import url('../../components/Footer/Footer.css');
+@import url('../../components/exercise-create/ExerciseCreate.css');
 
-@import url(../../components//Register/Register.css);
+@import url('../../components/footer/Footer.css');
+
+@import url('../../components/register/Register.css');
 
 
 

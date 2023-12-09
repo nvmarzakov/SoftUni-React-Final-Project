@@ -6,9 +6,10 @@ import Community from './components/Community'
 import Header from './components/Header'
 import Home from './components/home/Home'
 import Footer from './components/footer/Footer'
-import Logout from './components/Logout/Logout'
-import Register from './components/Register/Register'
+import Logout from './components/logout/Logout'
+import Register from './components/register/Register'
 import Notfound from './components/404/NotFound'
+import ExerciseCreate from './components/exercise-create/ExerciseCreate'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             
             <Routes>
                 <Route path='/' element={<Home/>}/>
+                <Route path= '/create-exercise' element={<ExerciseCreate/>} />
                 <Route path='/register' element={<Register/>} />
                 <Route path='/login' element={<Login/>} />
                 <Route path='/account' element={<Account/>} />
