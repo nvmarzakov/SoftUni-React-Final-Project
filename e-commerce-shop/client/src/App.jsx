@@ -21,10 +21,11 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path= '/create-exercise' element={<ExerciseCreate/>} />
-                <Route path='/register' element={<Register/>} />
                 <Route path='/login' element={<Login/>} />
-                <Route path='/account' element={<Account/>} />
+                <Route path='/register' element={<Register/>} />
+
                 <Route path='/logout' element={<Logout/>} />
+                <Route path='/account' element={<Account/>} />
                 <Route path='/community' element={<Community/>} />
                 <Route path='*' element={<Notfound/>} />
             </Routes>

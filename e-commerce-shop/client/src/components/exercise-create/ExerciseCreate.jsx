@@ -1,16 +1,21 @@
 export default function ExerciseCreate() {
+    const createExerciseSubmitHandler = (e) => {
 
-    
+        e.preventDefault();
+        
+        const exerciseData = Object.fromEntries(new FormData(e.currentTarget));
+        console.log(exerciseData);
+    }
 
     return (
         <div className="animate__animated animate__fadeIn create-container">
-            <form>
+            <form id="create" onSubmit={createExerciseSubmitHandler}>
                     {/* page-title */}
                     <h3 className="create-title">Create Exercise</h3>
 
                     <div className="row">
                         <div className="col-description">
-                            <label htmlFor="exercise-title">Exercise title:</label>
+                            <label className="col-description"htmlFor="exercise-title">Exercise title:</label>
                         </div>
 
                         <div className="col-input">
@@ -34,7 +39,7 @@ export default function ExerciseCreate() {
                     {/* Image-Field */}
                     <div className="row">
                         <div className="col-description">
-                            <label htmlFor="lastname">Image:</label>
+                            <label htmlFor="image-url">Image:</label>
                         </div>
                         <div className="col-input">
                             <div className="col-field">
@@ -58,7 +63,7 @@ export default function ExerciseCreate() {
 
                     {/* Submit Button */}
                     <div className="row button">
-                        <button type="submit">Submit</button>
+                        <button type="submit" value="Create Exercise">Submit</button>
                     </div>
                 </form>
         </div>

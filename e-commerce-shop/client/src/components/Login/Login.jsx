@@ -5,6 +5,7 @@ export default function Login() {
                 <form>
                     <h3 className="register-title">Login to your account:</h3>
                     <div className="row">
+                        {/* Email-Field */}
                         <div className="col-description">
                             <label htmlFor="fname">Email:</label>
                         </div>
@@ -16,7 +17,7 @@ export default function Login() {
                         </div>
                     </div>
 
-
+                    {/* Password-Field */}
                     <div className="row">
                         <div className="col-description">
                             <label htmlFor="lname">Password:</label>
@@ -27,7 +28,7 @@ export default function Login() {
                             </div>
                         </div>
                     </div>
-
+                    {/* Submit-btn */}
                     <div className="row button">
                         <button type="submit">Submit</button>
                     </div>
