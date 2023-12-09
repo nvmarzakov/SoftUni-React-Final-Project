@@ -1,0 +1,16 @@
+{
+    "99bcee50-a225-4394-b0bb-7628ec2a680e": {
+        "title": "test",
+        "category": "biceps",
+        "imageUrl": "https://m.media-amazon.com/images/I/61Oj2aphXQL._AC_UF1000,1000_QL80_.jpg",
+        "summary": "test ",
+        "_id": "99bcee50-a225-4394-b0bb-7628ec2a680e"
+    },
+    "19656aed-45fe-49c7-82bb-2b6f428cffc1": {
+        "title": "Back pulls",
+        "category": "Back",
+        "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/shot-of-a-man-completing-pull-ups-in-his-gym-royalty-free-image-1699273159.jpg",
+        "summary": "test",
+        "_id": "19656aed-45fe-49c7-82bb-2b6f428cffc1"
+    }
+}

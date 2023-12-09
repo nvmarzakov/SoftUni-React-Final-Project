@@ -1,10 +1,25 @@
+import { useNavigate } from 'react-router-dom';
+import * as exerciseService from '../../services/exerciseService';
+
 export default function ExerciseCreate() {
-    const createExerciseSubmitHandler = (e) => {
+    //to redirect -  useNavigate 
+    const navigate = useNavigate(); 
+
+    const createExerciseSubmitHandler = async (e) => {
 
         e.preventDefault();
         
         const exerciseData = Object.fromEntries(new FormData(e.currentTarget));
-        console.log(exerciseData);
+
+        try {
+            await exerciseService.create(exerciseData);
+
+            navigate('/exercises')
+        } catch (err) {
+            //Error notification
+            console.log(err)
+        }
+        
     }
 
     return (
