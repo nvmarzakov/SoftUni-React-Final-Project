@@ -12,5 +12,35 @@
         "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/shot-of-a-man-completing-pull-ups-in-his-gym-royalty-free-image-1699273159.jpg",
         "summary": "test",
         "_id": "19656aed-45fe-49c7-82bb-2b6f428cffc1"
+    },
+    "exercises": {
+        "a4713549-526e-4103-93b7-99ab95410880": {
+            "title": "Running",
+            "category": "sport",
+            "imageUrl": "https://t3.ftcdn.net/jpg/01/65/71/48/360_F_165714866_P2HiXnR9yOcAxR7F8IxvtlWBCAZvm5j1.jpg",
+            "summary": "runing test",
+            "_id": "a4713549-526e-4103-93b7-99ab95410880"
+        },
+        "281e895d-5593-49d5-b658-abecb88a78da": {
+            "title": "test4",
+            "category": "3242",
+            "imageUrl": "https://m.media-amazon.com/images/I/61Oj2aphXQL._AC_UF1000,1000_QL80_.jpg",
+            "summary": "234",
+            "_id": "281e895d-5593-49d5-b658-abecb88a78da"
+        },
+        "773fa5ca-eae5-4bd8-b5cb-86b91932c1a7": {
+            "title": "Chest",
+            "category": "Chest",
+            "imageUrl": "https://t4.ftcdn.net/jpg/01/10/60/93/360_F_110609357_6HZoN2iNERZ2m4bAy77PRNZXNepkG8BC.jpg",
+            "summary": "test",
+            "_id": "773fa5ca-eae5-4bd8-b5cb-86b91932c1a7"
+        },
+        "beea85bc-c63c-4834-b84a-f02d5953afb7": {
+            "title": "тест",
+            "category": "корем",
+            "imageUrl": "https://images.pexels.com/photos/2294363/pexels-photo-2294363.jpeg?auto=compress&cs=tinysrgb&w=600",
+            "summary": "ewrwetre",
+            "_id": "beea85bc-c63c-4834-b84a-f02d5953afb7"
+        }
     }
 }
