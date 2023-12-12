@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # installed apps
+    'rest_framework',
+    'corsheaders',
+    'app_posts',
 ]
+
+CONST_ALLOWED_ORIGINS = 'http://localhost:5173/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -74,9 +80,13 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "recharge_db",
+        "USER": "marzaka",
+        "PASSWORD": "Kosmonaft1",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
 
