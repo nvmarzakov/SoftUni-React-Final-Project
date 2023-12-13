@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 
 import * as exerciseService from '../../services/exerciseService';
+import ExerciseListItem from "./exercise-list-item/ExerciseListItem";
 
 
 export default function ExerciseList() {
@@ -9,18 +10,19 @@ export default function ExerciseList() {
     useEffect(() => {
         exerciseService.getAll()
             .then(result => setExercises(result))
+            .catch((err => {
+                console.log(err)
+            }))
     },[]);
-
-    console.log(exercises)
     
     return (
-        <section id="all-exercises-page">
-            <h1>All Exercises</h1>
-            <div className="all-exercises">
-                <div className="info">
-                    <img src="./" alt="" />
-                </div>
-            </div>
+        <section id="all-exercises-page" className="animate__animated animate__fadeIn">
+            <h2 className="all-exercises-page-title">All Exercises</h2>
+            <section className="exercise-list">
+            {exercises.map(exercise => (
+                <ExerciseListItem key={exercise._id} {...exercise} />
+            ))}
+            </section>
         </section>
     )
 }

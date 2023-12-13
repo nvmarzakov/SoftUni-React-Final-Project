@@ -10,9 +10,16 @@
 
 @import url('../../components/exercise-create/ExerciseCreate.css');
 
-@import url('../../components/footer/Footer.css');
+@import url('../../components/exercise-list/ExerciseList.css');
+
+@import url('../../components/exercise-list/exercise-list-item/ExerciseListItem.css');
 
 @import url('../../components/register/Register.css');
+
+@import url('../../components/community/Community.css');
+
+@import url('../../components/footer/Footer.css');
+
 
 
 
