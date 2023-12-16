@@ -6,15 +6,14 @@ const baseUrl = 'http://localhost:3030/jsonstore/exercises'
 export const getAll = async () => {
     const result = await request('GET', baseUrl);
 
-    console.log(result);
+    
 
-    //return from data object values 
-    return Object.values(result)
+    return Object.values(result) // премахвам id-тата
 }
 
 // create-exercise
 export const create = async (exerciseData) => {
-    const response = await fetch(`${baseUrl}/exercises`, {
+    const response = await fetch(`${baseUrl}`, {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

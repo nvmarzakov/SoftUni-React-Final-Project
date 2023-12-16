@@ -10,27 +10,24 @@ export default function ExerciseList() {
     useEffect(() => {
         exerciseService.getAll()
             .then(result => setExercises(result))
-            .catch((err => {
-                console.log(err)
-            }))
-    },[]);
-    
+    }, []);
+
     return (
         <section id="all-exercises-page" className="animate__animated animate__fadeIn">
             <h2 className="all-exercises-page-title">All Exercises</h2>
-            <section className="exercise-list">
-            {exercises.map(exercise => (
-                <ExerciseListItem 
-                key={exercise._id}
-                title={exercise.title} 
-                category={exercise.category}
-                imageUrl={exercise.imageUrl} />
-            ))}
+            <div className="exercise-list">
+                {exercises.map(exercise => (
+                    <ExerciseListItem
+                        key={exercise._id}
+                        title={exercise.title}
+                        category={exercise.category}
+                        imageUrl={exercise.imageUrl} />
+                ))}
 
-            {exercises.length === 0 && (
-                <h3>There is no exercises yet!</h3>
-            )}
-            </section>
+                {exercises.length === 0 && (
+                    <h3 className="no-articles">There is no exercises yet!</h3>
+                )}
+            </div>
         </section>
     )
 }

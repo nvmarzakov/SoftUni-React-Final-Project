@@ -19,12 +19,23 @@
 
 #all-exercises-page {
     background: rgb(117, 107, 107, 0.8);
-    margin: 2em 20em;
+    margin: 2em 8em;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
+.exercise-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+#exercise-item {
+    width: 300px; /* ширина на контейнера на картичката */
+    border: 1px solid #ccc;   
+  }
 
 .all-exercises-page-title {
     flex-basis: 100%;
@@ -32,3 +43,10 @@
     color: antiquewhite;
     font-size: 2em;
 }
+
+.img {
+    width: 100%; /* Пълна ширина на изображението */
+    height: 200px; /* Фиксирана височина на изображението */
+    object-fit: cover; /* За запълване на целия контейнер с изображението, като запазва пропорциите */
+    border: 1px solid #ccc;  
+  }
