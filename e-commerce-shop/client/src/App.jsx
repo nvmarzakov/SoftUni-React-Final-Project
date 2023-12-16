@@ -2,7 +2,7 @@ import { Routes, Route} from 'react-router-dom'
 
 import Login from './components/login/Login'
 import Account from './components/Account'
-import Community from './components/Community'
+import Community from './components/community/Community'
 import Header from './components/Header'
 import Home from './components/home/Home'
 import Footer from './components/footer/Footer'

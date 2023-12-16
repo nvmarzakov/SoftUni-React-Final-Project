@@ -1,0 +1,24 @@
+.community-container {
+    background: rgb(117, 107, 107, 0.8);
+    margin: 2em 2em;
+    padding: 8em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.community-title {
+    flex-basis: 100%;
+    text-align: center;
+    border: 2px solid orange;
+    margin: 0 0;
+    color: wheat;
+}
+
+.categories {
+    border: 2px solid blue;
+}
+
+.categories .category-list {
+    border: 1px solid green;
+}
