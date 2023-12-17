@@ -9,6 +9,12 @@ export const getAll = async () => {
     
 
     return Object.values(result) // премахвам id-тата
+};
+
+export const getOne = async (exerciseId) => {
+    const result = await request('GET', `${baseUrl}/${exerciseId}`);
+
+    return result;
 }
 
 // create-exercise
