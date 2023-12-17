@@ -13,7 +13,7 @@ export const getAll = async () => {
 
 export const getOne = async (exerciseId) => {
     const result = await request('GET', `${baseUrl}/${exerciseId}`);
-
+    console.log(result)
     return result;
 }
 
@@ -22,7 +22,7 @@ export const create = async (exerciseData) => {
     const response = await fetch(`${baseUrl}`, {
         method: 'POST',
         headers: {
-            'content-type': 'application/json'
+            'Content-type': 'application/json'
         },
         body: JSON.stringify(exerciseData)
     });

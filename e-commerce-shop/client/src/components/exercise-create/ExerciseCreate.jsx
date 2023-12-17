@@ -42,7 +42,7 @@ export default function ExerciseCreate() {
                     {/* Category-Field */}
                     <div className="row">
                         <div className="col-description">
-                            <label htmlFor="lastname">Category:</label>
+                            <label htmlFor="category">Category:</label>
                         </div>
                         <div className="col-input">
                             <div className="col-field">
@@ -51,6 +51,29 @@ export default function ExerciseCreate() {
                         </div>
                     </div>
 
+                    {/* Muscle-Field */}
+                    <div className="row">
+                        <div className="col-description">
+                            <label htmlFor="lastname">Muscle:</label>
+                        </div>
+                        <div className="col-input">
+                            <div className="col-field">
+                                <input type="text" id="muscle" name="muscle" placeholder="Enter type of muscle..." />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* exercise repetitions */}
+                    <div className="row">
+                        <div className="col-description">
+                            <label htmlFor="repetitions">Reps:</label>
+                        </div>
+                        <div className="col-input">
+                            <div className="col-field">
+                                <input type="text" id="repetitions" name="repetitions" placeholder="example: 1x12, 2x8" />
+                            </div>
+                        </div>
+                    </div>
                     {/* Image-Field */}
                     <div className="row">
                         <div className="col-description">
@@ -66,12 +89,12 @@ export default function ExerciseCreate() {
                     {/* Summary-Field */}
                     <div className="row">
                         <div className="col-description">
-                            <label htmlFor="summary">Summary:</label>
+                            <label htmlFor="description">Descritpion:</label>
                         </div>
 
                         <div className="col-input">
                             <div className="col-field">
-                                <textarea name="summary" id="summary" cols="30" rows="10"></textarea>
+                                <textarea name="description" id="description" placeholder='Enter description here...'cols="30" rows="10"></textarea>
                             </div>
                         </div>
                     </div>

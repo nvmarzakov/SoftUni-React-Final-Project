@@ -19,7 +19,7 @@
 
 #all-exercises-page {
     background: rgb(117, 107, 107, 0.8);
-    margin: 2em 8em;
+    margin: 2em 15em;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,6 @@
 .exercise-list {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: space-around;
 }
 

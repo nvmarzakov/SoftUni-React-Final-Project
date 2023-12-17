@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import * as exerciseService from '../../services/exerciseService'
 
@@ -14,19 +14,29 @@ export default function ExerciseDetails() {
 
     return (
         <section id="exercise-details" className="animate__animated animate__fadeIn">
-            <h1>Exercise Details</h1>
             <div className="info-section">
-                <div className="exercise-header">
-                    <img src={exercise.imageUrl} alt={exercise.title} />
-                    <span className="category">Category: {exercise.category}</span>
-                    <p className="muscle">Trapezius, Rhomboid</p>
+                <h1>Exercise Details</h1>
+               
+                <div className="details-container">
+                    <div className="description">
+                        <p className="category">Category: {exercise.category}</p>
+                        <p className="muscle">Muscle: {exercise.muscle}</p>
+                        <p className="reps">Reps: {exercise.repetitions}</p>
+                        <p className="summary">Description: {exercise.description}</p>
+                    </div>
+                    <div className="img-container">
+                        <img className="img-details" src={exercise.imageUrl} alt={exercise.title} />
+                    </div>
+                    
+                    
+                   
                 </div>
-                <p className="summary">
-                    {exercise.summary}
-                </p>
-                <p className="reps">
-                    Reps: {exercise.reps}
-                </p>
+            </div>
+            <div className="exercise-header">
+
+
+                <Link to={'/exercises'} className="back-button">Back</Link>
+
             </div>
         </section>
     );

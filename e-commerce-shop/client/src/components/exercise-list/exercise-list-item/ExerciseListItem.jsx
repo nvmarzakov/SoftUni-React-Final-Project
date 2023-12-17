@@ -4,9 +4,10 @@ export default function ExerciseListItem({
     _id,
     title,
     category,
+    muscle,
     imageUrl,
-    summary,
-    reps,
+    repetitions,
+    description,
 }) {
     return (
         <div className="exercise-list">

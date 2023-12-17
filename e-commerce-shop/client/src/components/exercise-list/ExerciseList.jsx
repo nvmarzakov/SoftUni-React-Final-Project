@@ -18,10 +18,7 @@ export default function ExerciseList() {
             <div className="exercise-list">
                 {exercises.map(exercise => (
                     <ExerciseListItem
-                        key={exercise._id}
-                        title={exercise.title}
-                        category={exercise.category}
-                        imageUrl={exercise.imageUrl} />
+                        key={exercise._id} {...exercise} />
                 ))}
 
                 {exercises.length === 0 && (
