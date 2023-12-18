@@ -13,7 +13,7 @@ export const getAll = async () => {
 
 export const getOne = async (exerciseId) => {
     const result = await request('GET', `${baseUrl}/${exerciseId}`);
-    console.log(result)
+    // console.log(result)
     return result;
 }
 

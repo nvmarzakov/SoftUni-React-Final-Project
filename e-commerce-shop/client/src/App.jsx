@@ -1,28 +1,38 @@
-import { Routes, Route } from 'react-router-dom'
+import { useState } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 
+import * as authService from '../src/services/authService';
+import AuthContext from './contexts/authContext';
+import Path from './paths';
 
-import Account from './components/Account'
-import Community from './components/community/Community'
-import Header from './components/Header'
-import Home from './components/home/Home'
-import Footer from './components/footer/Footer'
-import Login from './components/Login/Login'
-import Logout from './components/logout/Logout'
-import Register from './components/register/Register'
-import Notfound from './components/404/NotFound'
-import ExerciseCreate from './components/exercise-create/ExerciseCreate'
-import ExerciseList from './components/exercise-list/ExerciseList'
-import ExerciseDetails from './components/exercise-details/ExerciseDetails'
-import { useState } from 'react'
-import AuthContext from './contexts/authContext'
+import Account from './components/Account';
+import Community from './components/community/Community';
+import Header from './components/Header';
+import Home from './components/home/Home';
+import Footer from './components/footer/Footer';
+import Login from './components/Login/Login';
+import Logout from './components/logout/Logout';
+import Register from './components/register/Register';
+import Notfound from './components/404/NotFound';
+import ExerciseCreate from './components/exercise-create/ExerciseCreate';
+import ExerciseList from './components/exercise-list/ExerciseList';
+import ExerciseDetails from './components/exercise-details/ExerciseDetails';
 
 
 function App() {
 
+    const navigate = useNavigate();
     const [auth, setAuth] = useState({})
 
-    const loginSubmitHandler = (values) => {
-        console.log(values)
+    // accessToken
+    // email
+    // username
+    // _id
+    const loginSubmitHandler = async (values) => {
+        const result = await authService.login(values.email, values.password);
+    
+        setAuth(result);
+        navigate(Path.ExerciseList)
     }
 
     return (
