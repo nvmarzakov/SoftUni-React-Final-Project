@@ -3,7 +3,7 @@ import { useState } from "react";
 //custom hook for controlled form 
 export default function useFormHook(submitHandler, initialValues) {
 
-    const [values, setValues] = useState({initialValues});
+    const [values, setValues] = useState(initialValues);
 
     const onChange = (e) => {
         setValues(state => ({

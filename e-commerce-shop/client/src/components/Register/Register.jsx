@@ -5,34 +5,34 @@ export default function Register() {
                 <h3 className="register-title">Please enter your details:</h3>
                 <div className="row">
                     <div className="col-description">
-                        <label htmlFor="fname">Email:</label>
+                        <label htmlFor="email">Email:</label>
                     </div>
 
                     <div className="col-input">
                         <div className="col-field">
-                            <input type="text" id="fname" name="firstname" placeholder="example@mail.com" />
+                            <input type="email" id="email" name="email" placeholder="example@mail.com" />
                         </div>
                     </div>
                 </div>
 
                  <div className="row">
                     <div className="col-description">
-                        <label htmlFor="lname">Password:</label>
+                        <label htmlFor="password">Password:</label>
                     </div>
                     <div className="col-input">
                         <div className="col-field">
-                            <input type="password" id="lname" name="lastname" placeholder="Enter your password" />
+                            <input type="password" id="password" name="password" placeholder="Enter your password" />
                         </div>
                     </div>
                 </div>
 
                 <div className="row">
                     <div className="col-description">
-                        <label htmlFor="lname">Confirm :</label>
+                        <label htmlFor="password">Confirm :</label>
                     </div>
                     <div className="col-input">
                         <div className="col-field">
-                            <input type="password" id="lname" name="lastname" placeholder="Confirm your password" />
+                            <input type="password" id="password" name="password" placeholder="Confirm your password" />
                         </div>
                     </div>
                 </div>

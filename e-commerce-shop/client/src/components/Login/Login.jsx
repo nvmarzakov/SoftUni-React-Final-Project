@@ -1,15 +1,17 @@
 import useFormHook from "../../hooks/useFormHook"
 
-export default function Login() {
-    const { formValues, changeHandler, submitHandler } = useFormHook({
+export default function Login({
+    loginSubmitHandler,
+}) {
+    const { values, onChange, onSubmit } = useFormHook(loginSubmitHandler, {
         email: '',
-        password: ''
+        password: '',
     });
 
     return (
         <>
             <div className="animate__animated animate__fadeIn container register-container">
-                <form id="login" onSubmit={submitHandler}>
+                <form id="login" onSubmit={onSubmit}>
                     <h3 className="register-title">Login to your account:</h3>
                     <div className="row">
                         {/* Email-Field */}
@@ -19,15 +21,14 @@ export default function Login() {
 
                         <div className="col-input">
                             <div className="col-field">
-                                <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                placeholder="example@mail.com" 
-                                onChange={changeHandler} 
-                                value={formValues.email}
+                                <input
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@mail.com"
+                                    onChange={onChange}
+                                    value={values.email}
                                 />
-                                
                             </div>
                         </div>
                     </div>
@@ -44,8 +45,8 @@ export default function Login() {
                                     id="password"
                                     name="password"
                                     placeholder="Enter your password"
-                                    onChange={changeHandler}
-                                    value={formValues.password}
+                                    onChange={onChange}
+                                    value={values.password}
                                 />
                             </div>
                         </div>
