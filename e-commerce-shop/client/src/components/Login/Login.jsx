@@ -1,11 +1,16 @@
 import useFormHook from "../../hooks/useFormHook"
 
+const loginformKeys = {
+    Email: 'email',
+    Password: 'password',
+}
+
 export default function Login({
     loginSubmitHandler,
 }) {
     const { values, onChange, onSubmit } = useFormHook(loginSubmitHandler, {
-        email: '',
-        password: '',
+        [loginformKeys.Email]: '',
+        [loginformKeys.Password]: '',
     });
 
     return (
@@ -24,10 +29,10 @@ export default function Login({
                                 <input
                                     type="text"
                                     id="email"
-                                    name="email"
+                                    name={loginformKeys.Email}
                                     placeholder="example@mail.com"
                                     onChange={onChange}
-                                    value={values.email}
+                                    value={values[loginformKeys.Email]}
                                 />
                             </div>
                         </div>
@@ -43,10 +48,10 @@ export default function Login({
                                 <input
                                     type="password"
                                     id="password"
-                                    name="password"
+                                    name={loginformKeys.Password}
                                     placeholder="Enter your password"
                                     onChange={onChange}
-                                    value={values.password}
+                                    value={values[loginformKeys.Password]}
                                 />
                             </div>
                         </div>
