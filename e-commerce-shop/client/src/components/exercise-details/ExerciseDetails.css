@@ -28,8 +28,16 @@ section {
 }
 
 .comments .form .btn-submit {
-    border-radius: 5px;
-    padding: 0.5em;
+    font-size: 1em;
+    padding: 0.3em;
+    border-radius: 10px;
+    color: white;
+    background: rgb(10, 83, 10);
+}
+
+.comments .form .btn-submit:hover {
+    background: rgb(101, 194, 101);
+    color: white;
 }
 
 .comments .com {
