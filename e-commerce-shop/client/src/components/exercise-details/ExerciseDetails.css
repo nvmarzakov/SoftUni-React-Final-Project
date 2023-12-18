@@ -1,7 +1,9 @@
 .details-all {
     display: flex;
+    justify-content: center;
     margin: 2em auto;
     gap: 1em;
+    
 }
 
 section {
@@ -18,6 +20,16 @@ section {
     flex-direction: column;
     text-align: center;
     margin: 1em;
+}
+
+.comments .form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comments .form .btn-submit {
+    border-radius: 5px;
+    padding: 0.5em;
 }
 
 .comments .com {

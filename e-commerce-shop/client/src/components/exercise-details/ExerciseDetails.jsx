@@ -85,7 +85,7 @@ export default function ExerciseDetails() {
                             
                         </ul>
                         {comments.length === 0 && (
-                            <p className="no-comments">No comments.</p>
+                            <p className="article no-comments">No comments.</p>
                         )}
                         
                     </article>
