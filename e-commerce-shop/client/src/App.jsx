@@ -22,7 +22,11 @@ import ExerciseDetails from './components/exercise-details/ExerciseDetails';
 function App() {
 
     const navigate = useNavigate();
-    const [auth, setAuth] = useState({})
+    const [auth, setAuth] = useState(() => {
+        localStorage.removeItem('accessToken'); //преди презареждане изтрива стария токен
+
+        return {};
+    })
 
     // accessToken
     // email
@@ -32,6 +36,9 @@ function App() {
         const result = await authService.login(values.email, values.password);
     
         setAuth(result);
+
+        localStorage.setItem('accessToken', result.accessToken);
+        
         navigate(Path.ExerciseList)
     };
 
@@ -39,16 +46,27 @@ function App() {
         const result = await authService.register(values.email, values.password);
         
         setAuth(result);
+        
+        localStorage.setItem('accessToken', result.accessToken);
+        
         navigate(Path.Login)
 
     };
 
+    const logoutHandler = () => {
+        
+        setAuth({});
+        
+        localStorage.removeItem('accessToken');
+    }
+
     const values = {
         loginSubmitHandler,
         registerSubmitHandler,
+        logoutHandler,
         username: auth.username || auth.email,
         email: auth.email,
-        isAuthenticated: !!auth.email, //ако имаме запазен юзър , се обръща в bool 
+        isAuthenticated: !!auth.accessToken, //ако имаме запазен юзър , се обръща в bool 
     };
 
 
@@ -64,7 +82,7 @@ function App() {
                     <Route path={Path.Login} element={<Login/>} />
                     <Route path={Path.Register} element={<Register />} />
                     <Route path='/exercises/:exerciseId' element={<ExerciseDetails />} />
-                    <Route path='/logout' element={<Logout />} />
+                    <Route path={Path.Logout} element={<Logout />} />
                     <Route path='/account' element={<Account />} />
                     <Route path='/community' element={<Community />} />
                     <Route path='*' element={<Notfound />} />
