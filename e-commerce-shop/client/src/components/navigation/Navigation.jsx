@@ -11,15 +11,22 @@ export default function Navigation() {
 
     return (
         <>
-            {!isAuthenticated && (   
+            {!isAuthenticated && (
                 <p className="site-title">
-                <Link to='/'>Recharge</Link>
-            </p>
-            )}
+                    <Link to='/'>Recharge</Link>
+                </p>
+            )};
+
+            {isAuthenticated && (
+                <p className="site-title">
+                    <Link to='/exercises'>Recharge</Link>
+                </p>
+            )};
+
             <nav className="main-nav">
                 <ul>
                     {isAuthenticated && (
-                        <>  
+                        <>
                             <li><Link to='/exercises'>All Exercises</Link></li>
                             <li><Link to={'/create-exercise'}>Create Exercise</Link></li>
                             {/* <li><Link to='/community'>Community</Link></li> */}
