@@ -33,14 +33,23 @@ function App() {
     
         setAuth(result);
         navigate(Path.ExerciseList)
-    }
+    };
+
+    const registerSubmitHandler = async (values) => {
+        const result = await authService.register(values.email, values.password);
+        
+        setAuth(result);
+        navigate(Path.Login)
+
+    };
 
     const values = {
         loginSubmitHandler,
-        username: auth.username,
+        registerSubmitHandler,
+        username: auth.username || auth.email,
         email: auth.email,
-        isAuthenticated: !!auth.username, //ако имаме запазен юзър , се обръща в bool 
-    }
+        isAuthenticated: !!auth.email, //ако имаме запазен юзър , се обръща в bool 
+    };
 
 
     return (
@@ -52,8 +61,8 @@ function App() {
                     <Route path={Path.Home} element={<Home />} />
                     <Route path={Path.ExerciseList} element={<ExerciseList />} />
                     <Route path='/create-exercise' element={<ExerciseCreate />} />
-                    <Route path='/login' element={<Login/>} />
-                    <Route path='/register' element={<Register />} />
+                    <Route path={Path.Login} element={<Login/>} />
+                    <Route path={Path.Register} element={<Register />} />
                     <Route path='/exercises/:exerciseId' element={<ExerciseDetails />} />
                     <Route path='/logout' element={<Logout />} />
                     <Route path='/account' element={<Account />} />
