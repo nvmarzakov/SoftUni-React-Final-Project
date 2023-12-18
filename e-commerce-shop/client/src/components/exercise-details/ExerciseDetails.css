@@ -1,4 +1,9 @@
-#exercise-details {
+.details-all {
+    display: flex;
+}
+
+#exercise-details,
+.comments {
     box-shadow: 0px 0px 30px 0px;
     border-radius: 15px;
     background: rgb(117, 107, 107);
@@ -10,30 +15,26 @@
     margin: 1em auto;
 }
 
-.details-container {
-    display: flex;
-
-    border: 2px solid orange;
+.details-title {
+    font-size: 2em;
 }
 
-.description {
+.details-container {
     display: flex;
-    
-    border: 2px solid blue;
+    margin: 0.5em;
+}
+
+.details-description {
+    margin: 1em auto;
+    flex-basis: 50%;
+    text-align: start;
     border-radius: 15px;
     padding: 0.5em;
 }
 
-.img-container {
-    align-items: end;
-    
-    border: 1px solid blue;
-}
-
 .img-details {
-   
     display: inline-block;
-    max-width: 35%;
+    max-width: 60%;
     border-radius: 15px;
     border: 1px solid white;
 }
@@ -54,4 +55,4 @@
 .back-button:hover {
     background: deepskyblue;
     transition: 0.3s;
-}
+}   
