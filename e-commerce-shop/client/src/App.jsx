@@ -5,7 +5,7 @@ import * as authService from '../src/services/authService';
 import AuthContext from './contexts/authContext';
 import Path from './paths';
 
-import Account from './components/Account';
+import Account from './components/account/Account';
 import Community from './components/community/Community';
 import Header from './components/Header';
 import Home from './components/home/Home';

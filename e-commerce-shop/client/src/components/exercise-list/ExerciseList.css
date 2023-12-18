@@ -28,12 +28,13 @@
 .exercise-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #exercise-item {
     width: 300px; /* ширина на контейнера на картичката */
     border: 1px solid #ccc;   
+    
   }
 
 .all-exercises-page-title {

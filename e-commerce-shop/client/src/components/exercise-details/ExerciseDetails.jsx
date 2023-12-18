@@ -19,7 +19,7 @@ export default function ExerciseDetails() {
         exerciseService.getOne(exerciseId)
             .then(result => setExercise(result));
         
-        commentService.getAll()
+        commentService.getAll(exerciseId)
             .then(setComments)
     }, [exerciseId])
 
