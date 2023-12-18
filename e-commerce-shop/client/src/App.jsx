@@ -35,14 +35,22 @@ function App() {
         navigate(Path.ExerciseList)
     }
 
+    const values = {
+        loginSubmitHandler,
+        username: auth.username,
+        email: auth.email,
+        isAuthenticated: !!auth.username, //ако имаме запазен юзър , се обръща в bool 
+    }
+
+
     return (
-        <AuthContext.Provider value={{loginSubmitHandler}}>
+        <AuthContext.Provider value={values}>
             <div className='body-container'>
                 <Header />
 
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/exercises' element={<ExerciseList />} />
+                    <Route path={Path.Home} element={<Home />} />
+                    <Route path={Path.ExerciseList} element={<ExerciseList />} />
                     <Route path='/create-exercise' element={<ExerciseCreate />} />
                     <Route path='/login' element={<Login/>} />
                     <Route path='/register' element={<Register />} />
