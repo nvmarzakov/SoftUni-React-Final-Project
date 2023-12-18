@@ -1,3 +1,38 @@
 {
-    
+    "5f30a990-0370-4692-983f-b0c4e27c5ad0": {
+        "title": "Push",
+        "category": "Arms",
+        "muscle": "biceps",
+        "repetitions": "2x12",
+        "imageUrl": "https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "description": "This is desctiption ! ",
+        "_id": "5f30a990-0370-4692-983f-b0c4e27c5ad0"
+    },
+    "53987f08-083d-4fbc-b87a-ec9138650096": {
+        "title": "Close-Grip Bench Press",
+        "category": "Upper Body",
+        "muscle": "Triceps",
+        "repetitions": "3x12",
+        "imageUrl": "https://manofmany.com/wp-content/uploads/2022/09/1-Close-Grip-Bench-Press.jpg",
+        "description": "It’s a staple option but it’s on the list for a reason. The Close-Grip Bench Press is a multijoint compound movement that allows you to work multiple body parts at once, putting greater strain on your muscles and providing a more complete workout. This exercise targets the triceps through the use of a close grip starting position, which adds to the progressive overload function of the movement...",
+        "_id": "53987f08-083d-4fbc-b87a-ec9138650096"
+    },
+    "1791e3f3-2b3c-4958-bab4-4024165f1add": {
+        "title": "Incline Bench Press",
+        "category": "Upper Body",
+        "muscle": "Chest",
+        "repetitions": "3x8",
+        "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/incline-bench-1548261402.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "Set up on a bench at a 45-degree incline and hold the weights above your chest, with your arms extended. Focus on your tempo by lowering the weights for five seconds, pause, then explode up, squeezing your pecs hard at the top. Get your rest in before the minute is up. You’ll need it.",
+        "_id": "1791e3f3-2b3c-4958-bab4-4024165f1add"
+    },
+    "3c9c9b09-a646-4411-805b-5d3b5a1e7df6": {
+        "title": "test",
+        "category": "teste",
+        "muscle": "teste",
+        "repetitions": "teste",
+        "imageUrl": "https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "description": "etete",
+        "_id": "3c9c9b09-a646-4411-805b-5d3b5a1e7df6"
+    }
 }
