@@ -22,7 +22,7 @@ export default function Navigation() {
                         <>  
                             <li><Link to='/exercises'>All Exercises</Link></li>
                             <li><Link to={'/create-exercise'}>Create Exercise</Link></li>
-                            <li><Link to='/community'>Community</Link></li>
+                            {/* <li><Link to='/community'>Community</Link></li> */}
                             <li><Link to='/account'>Account</Link></li>
                             <li><Link to='/logout'>Logout | {username}</Link></li>
                         </>
@@ -31,7 +31,6 @@ export default function Navigation() {
                         <>
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/exercises'>All Exercises</Link></li>
-
                             <li><Link to='/login'>Login</Link></li>
                             <li><Link to='/register'>Register</Link></li>
                         </>
