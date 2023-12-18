@@ -12,11 +12,15 @@ export default function ExerciseDetails() {
     } = useContext(AuthContext)
 
     const [exercise, setExercise] = useState({});
+    const [comments, setComments] = useState([])
     const { exerciseId } = useParams();
 
     useEffect(() => {
         exerciseService.getOne(exerciseId)
             .then(result => setExercise(result));
+        
+        commentService.getAll()
+            .then(setComments)
     }, [exerciseId])
 
     //Comments Handler
@@ -30,7 +34,7 @@ export default function ExerciseDetails() {
             formData.get('username'),
             formData.get('comment')
         );
-
+        setComments(state => [...state, newComment])
         console.log(newComment)
     }
 
@@ -69,6 +73,21 @@ export default function ExerciseDetails() {
                             <textarea name="comment" placeholder="comment here..."></textarea>
                             <input className="btn-submit" type="submit" value="Add Comment" />
                         </form>
+                    </article>
+                    <article className="comments com">
+                        <h3>Comments:</h3>
+                        <ul>
+                            {comments.map(({_id, username, text}) => (
+                                <li key={_id} className="comment">
+                                <p>user: {username} - {text}</p>
+                            </li>
+                            ))}
+                            
+                        </ul>
+                        {comments.length === 0 && (
+                            <p className="no-comments">No comments.</p>
+                        )}
+                        
                     </article>
                 </section>
             )}
