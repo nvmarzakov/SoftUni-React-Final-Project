@@ -1,4 +1,4 @@
-import { Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 
 import Account from './components/Account'
@@ -14,6 +14,7 @@ import ExerciseCreate from './components/exercise-create/ExerciseCreate'
 import ExerciseList from './components/exercise-list/ExerciseList'
 import ExerciseDetails from './components/exercise-details/ExerciseDetails'
 import { useState } from 'react'
+import AuthContext from './contexts/authContext'
 
 
 function App() {
@@ -25,24 +26,26 @@ function App() {
     }
 
     return (
-        <div className='body-container'>
-            <Header />
-            
-            <Routes>
-                <Route path='/' element={<Home/>}/>
-                <Route path='/exercises' element={<ExerciseList/>}/>
-                <Route path= '/create-exercise' element={<ExerciseCreate/>} />
-                <Route path='/login' element={<Login loginSubmitHandler={loginSubmitHandler}/>} />
-                <Route path='/register' element={<Register/>} />
-                <Route path='/exercises/:exerciseId' element={<ExerciseDetails />} />
-                <Route path='/logout' element={<Logout/>} />
-                <Route path='/account' element={<Account/>} />
-                <Route path='/community' element={<Community/>} />
-                <Route path='*' element={<Notfound/>} />
-            </Routes>
+        <AuthContext.Provider value={{loginSubmitHandler}}>
+            <div className='body-container'>
+                <Header />
 
-            <Footer />
-        </div>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/exercises' element={<ExerciseList />} />
+                    <Route path='/create-exercise' element={<ExerciseCreate />} />
+                    <Route path='/login' element={<Login/>} />
+                    <Route path='/register' element={<Register />} />
+                    <Route path='/exercises/:exerciseId' element={<ExerciseDetails />} />
+                    <Route path='/logout' element={<Logout />} />
+                    <Route path='/account' element={<Account />} />
+                    <Route path='/community' element={<Community />} />
+                    <Route path='*' element={<Notfound />} />
+                </Routes>
+
+                <Footer />
+            </div>
+        </AuthContext.Provider>
     )
 }
 
